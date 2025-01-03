@@ -7,14 +7,10 @@
 
 import UIKit
 import Firebase
-
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
     let db = Firestore.firestore()
-    var gameplayStatsManager = GameplayStatsManager()
-    
-    var outputStats: GameplayStatsModel = GameplayStatsModel(guess1: 0, guess2: 0, guess3: 0, guess4: 0, incorrect: 0, questions: 0, streak: 0, docID: "", maxStreak: 0)
-    
     
     @IBOutlet weak var usernameText: UITextField!
     
@@ -25,11 +21,11 @@ class LoginViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        gameplayStatsManager.delegate = self
         self.loginFail.text = ""
         
         self.usernameText.text = defaults.object(forKey: "username") as? String
@@ -53,8 +49,6 @@ class LoginViewController: UIViewController {
                     self.defaults.set(self.usernameText.text, forKey: "username")
                     self.defaults.set(self.passwordText.text, forKey: "password")
                     
-                    self.gameplayStatsManager.favorites()
-                    
                     
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
                         
@@ -66,24 +60,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == Constants.loginSegue {
-            let gameVC: GameViewController = segue.destination as! GameViewController
-            gameVC.outputStats = self.outputStats
-        }
-    }
+
 }
 
-
-//MARK: - GameplayStatsManager
-
-extension LoginViewController: GameplayStatsManagerDelegate{
-    func didRetrieveStats(_ gameplayStatsManager: GameplayStatsManager, outputStats: GameplayStatsModel) {
-        
-        self.outputStats = outputStats
-
-    }
-    
-}
 

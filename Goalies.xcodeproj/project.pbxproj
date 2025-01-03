@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F7401F2671ED40B03F2CD48 /* Pods_Goalies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96D2FF457A9C22A8108DCB5 /* Pods_Goalies.framework */; };
 		417BCBDF2D28447B0064EA9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCBDE2D28447B0064EA9A /* AppDelegate.swift */; };
 		417BCBE12D28447B0064EA9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCBE02D28447B0064EA9A /* SceneDelegate.swift */; };
 		417BCBE32D28447B0064EA9A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCBE22D28447B0064EA9A /* HomeViewController.swift */; };
@@ -17,6 +18,13 @@
 		417BCBF92D28460D0064EA9A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCBF82D28460D0064EA9A /* RegisterViewController.swift */; };
 		417BCBFB2D2847290064EA9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCBFA2D2847290064EA9A /* LoginViewController.swift */; };
 		417BCBFD2D2848010064EA9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCBFC2D2848010064EA9A /* Constants.swift */; };
+		417BCBFF2D284D2E0064EA9A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCBFE2D284D2E0064EA9A /* MainViewController.swift */; };
+		417BCC012D284E090064EA9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 417BCC002D284E090064EA9A /* GoogleService-Info.plist */; };
+		417BCC032D284E270064EA9A /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417BCC022D284E260064EA9A /* CreateGoalViewController.swift */; };
+		4197B4AD2D285FF9008384F2 /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197B4AC2D285FF9008384F2 /* GoalModel.swift */; };
+		4197B4AF2D286AB4008384F2 /* ShowGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197B4AE2D286AB4008384F2 /* ShowGoalViewController.swift */; };
+		4197B4B12D286D60008384F2 /* GoalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197B4B02D286D60008384F2 /* GoalManager.swift */; };
+		4197B4B32D287435008384F2 /* DetailGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4197B4B22D287435008384F2 /* DetailGoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,16 @@
 		417BCBF82D28460D0064EA9A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		417BCBFA2D2847290064EA9A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		417BCBFC2D2848010064EA9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		417BCBFE2D284D2E0064EA9A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		417BCC002D284E090064EA9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		417BCC022D284E260064EA9A /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
+		4197B4AC2D285FF9008384F2 /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
+		4197B4AE2D286AB4008384F2 /* ShowGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowGoalViewController.swift; sourceTree = "<group>"; };
+		4197B4B02D286D60008384F2 /* GoalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalManager.swift; sourceTree = "<group>"; };
+		4197B4B22D287435008384F2 /* DetailGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGoalViewController.swift; sourceTree = "<group>"; };
+		5FDD23186D66708E5C8150F5 /* Pods-Goalies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goalies.debug.xcconfig"; path = "Target Support Files/Pods-Goalies/Pods-Goalies.debug.xcconfig"; sourceTree = "<group>"; };
+		97BB58F4E7149DC198E135C3 /* Pods-Goalies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goalies.release.xcconfig"; path = "Target Support Files/Pods-Goalies/Pods-Goalies.release.xcconfig"; sourceTree = "<group>"; };
+		D96D2FF457A9C22A8108DCB5 /* Pods_Goalies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goalies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7401F2671ED40B03F2CD48 /* Pods_Goalies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +69,8 @@
 			children = (
 				417BCBDD2D28447B0064EA9A /* Goalies */,
 				417BCBDC2D28447B0064EA9A /* Products */,
+				4E65FFADDCFF8D24EF7EFEE9 /* Pods */,
+				598159389C19F7497209836F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +92,7 @@
 				417BCBF72D2844A90064EA9A /* Controller */,
 				417BCBEA2D28447C0064EA9A /* Assets.xcassets */,
 				417BCBEC2D28447C0064EA9A /* LaunchScreen.storyboard */,
+				417BCC002D284E090064EA9A /* GoogleService-Info.plist */,
 				417BCBEF2D28447C0064EA9A /* Info.plist */,
 				417BCBE72D28447B0064EA9A /* Goalies.xcdatamodeld */,
 			);
@@ -81,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				417BCBFC2D2848010064EA9A /* Constants.swift */,
+				4197B4AC2D285FF9008384F2 /* GoalModel.swift */,
+				4197B4B02D286D60008384F2 /* GoalManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,8 +123,29 @@
 				417BCBE22D28447B0064EA9A /* HomeViewController.swift */,
 				417BCBF82D28460D0064EA9A /* RegisterViewController.swift */,
 				417BCBFA2D2847290064EA9A /* LoginViewController.swift */,
+				417BCBFE2D284D2E0064EA9A /* MainViewController.swift */,
+				417BCC022D284E260064EA9A /* CreateGoalViewController.swift */,
+				4197B4AE2D286AB4008384F2 /* ShowGoalViewController.swift */,
+				4197B4B22D287435008384F2 /* DetailGoalViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4E65FFADDCFF8D24EF7EFEE9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FDD23186D66708E5C8150F5 /* Pods-Goalies.debug.xcconfig */,
+				97BB58F4E7149DC198E135C3 /* Pods-Goalies.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		598159389C19F7497209836F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D96D2FF457A9C22A8108DCB5 /* Pods_Goalies.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 417BCBF22D28447C0064EA9A /* Build configuration list for PBXNativeTarget "Goalies" */;
 			buildPhases = (
+				337539975F85C9F62D489D08 /* [CP] Check Pods Manifest.lock */,
 				417BCBD72D28447B0064EA9A /* Sources */,
 				417BCBD82D28447B0064EA9A /* Frameworks */,
 				417BCBD92D28447B0064EA9A /* Resources */,
+				A12C0D380A964EFB3ED29FE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,12 +209,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				417BCBEB2D28447C0064EA9A /* Assets.xcassets in Resources */,
+				417BCC012D284E090064EA9A /* GoogleService-Info.plist in Resources */,
 				417BCBEE2D28447C0064EA9A /* Base in Resources */,
 				417BCBE62D28447B0064EA9A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		337539975F85C9F62D489D08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Goalies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A12C0D380A964EFB3ED29FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goalies/Pods-Goalies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goalies/Pods-Goalies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goalies/Pods-Goalies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		417BCBD72D28447B0064EA9A /* Sources */ = {
@@ -177,10 +267,16 @@
 				417BCBFB2D2847290064EA9A /* LoginViewController.swift in Sources */,
 				417BCBE92D28447B0064EA9A /* Goalies.xcdatamodeld in Sources */,
 				417BCBF92D28460D0064EA9A /* RegisterViewController.swift in Sources */,
+				4197B4B32D287435008384F2 /* DetailGoalViewController.swift in Sources */,
 				417BCBE32D28447B0064EA9A /* HomeViewController.swift in Sources */,
 				417BCBFD2D2848010064EA9A /* Constants.swift in Sources */,
 				417BCBDF2D28447B0064EA9A /* AppDelegate.swift in Sources */,
 				417BCBE12D28447B0064EA9A /* SceneDelegate.swift in Sources */,
+				4197B4AF2D286AB4008384F2 /* ShowGoalViewController.swift in Sources */,
+				417BCC032D284E270064EA9A /* CreateGoalViewController.swift in Sources */,
+				4197B4AD2D285FF9008384F2 /* GoalModel.swift in Sources */,
+				4197B4B12D286D60008384F2 /* GoalManager.swift in Sources */,
+				417BCBFF2D284D2E0064EA9A /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +423,7 @@
 		};
 		417BCBF32D28447C0064EA9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FDD23186D66708E5C8150F5 /* Pods-Goalies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,6 +457,7 @@
 		};
 		417BCBF42D28447C0064EA9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97BB58F4E7149DC198E135C3 /* Pods-Goalies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
